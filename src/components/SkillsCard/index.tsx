@@ -5,6 +5,7 @@ import { styled } from "@mui/material/styles";
 import LinearProgress, {
   linearProgressClasses,
 } from "@mui/material/LinearProgress";
+import { Data } from "@/constants/Data";
 
 const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   height: 11,
@@ -24,40 +25,6 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
     }),
   },
 }));
-const SkillsList = [
-  {
-    name: "React",
-    percentage: 95,
-  },
-  {
-    name: "Next.js",
-    percentage: 95,
-  },
-  {
-    name: "TypeScript",
-    percentage: 95,
-  },
-  {
-    name: "JavaScript",
-    percentage: 95,
-  },
-  {
-    name: "Java",
-    percentage: 80,
-  },
-  {
-    name: "HTML",
-    percentage: 100,
-  },
-  {
-    name: "CSS",
-    percentage: 100,
-  },
-  {
-    name: "UI/UX",
-    percentage: 85,
-  },
-];
 
 export default function SkillsCard() {
   return (
@@ -88,7 +55,7 @@ export default function SkillsCard() {
           spacing="6rem"
           verticalSpacing="xxl"
         >
-          {SkillsList.map((data, index) => {
+          {Data.AboutSection.Skills.map((data, index) => {
             return (
               <Stack key={index} w="100%">
                 <Group justify="space-between">

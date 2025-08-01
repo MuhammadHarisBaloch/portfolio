@@ -8,21 +8,6 @@ interface ExperienceList {
   description?: string;
 }
 [];
-const ExperienceList: ExperienceList[] = [
-  {
-    title: "Software Engineering Intern",
-    subTitle: "Maqsad Pvt Ltd",
-    time: "Aug 2022–Jul 2023, June–Aug 2024",
-    description:
-      "Built responsive web designs and completed tasks under team leads.",
-  },
-  {
-    title: "Lead Finance",
-    subTitle: "MLSA MUET",
-    time: " Mar–Dec 2023",
-    description: "Managed sponsorships and event budgets.",
-  },
-];
 
 interface EducationExperienceCardProps {
   icon: JSX.Element;

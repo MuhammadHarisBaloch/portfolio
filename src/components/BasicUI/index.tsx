@@ -1,9 +1,9 @@
+import { Data } from "@/constants/Data";
 import { AppShell, Flex, Text, Group, Burger, Stack } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { PropsWithChildren } from "react";
 import { Link } from "react-scroll";
 
-const HeaderList = ["Home", "About", "Projects", "Contact"];
 export default function BasicUI({ children }: PropsWithChildren) {
   const [opened, { toggle }] = useDisclosure();
   return (
@@ -28,7 +28,7 @@ export default function BasicUI({ children }: PropsWithChildren) {
               Muhammad Haris
             </Text>
             <Flex gap="3xl" visibleFrom="sm">
-              {HeaderList.map((data, index) => {
+              {Data.HeaderSection.HeaderItems.map((data, index) => {
                 return (
                   <Link
                     key={index}
@@ -57,7 +57,7 @@ export default function BasicUI({ children }: PropsWithChildren) {
       </AppShell.Header>
       <AppShell.Navbar bg="black" px="xl" py="lg">
         <Stack>
-          {HeaderList.map((data, index) => {
+          {Data.HeaderSection.HeaderItems.map((data, index) => {
             return (
               <Link
                 key={index}

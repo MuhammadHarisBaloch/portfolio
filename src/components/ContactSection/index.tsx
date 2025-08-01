@@ -11,27 +11,11 @@ import {
 } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { notifications } from "@mantine/notifications";
-import { IconPhone, IconMail, IconMapPin } from "@tabler/icons-react";
 import { isMobile } from "react-device-detect";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-const ContactInfo = [
-  {
-    icon: <IconPhone size={24} color="#06B6D4" />,
-    title: "Phone",
-    subTitle: "0309 3185997",
-  },
-  {
-    icon: <IconMail size={24} color="#06B6D4" />,
-    title: "Email",
-    subTitle: "mrharsi502@gmail.com",
-  },
-  {
-    icon: <IconMapPin size={24} color="#06B6D4" />,
-    title: "Location",
-    subTitle: "DHA, Karachi, Pakistan",
-  },
-];
+import { Data } from "@/constants/Data";
+
 export default function ContactSection() {
   const sendEmail = async () => {
     try {
@@ -69,7 +53,7 @@ export default function ContactSection() {
           align={isMobile ? "center" : "flex-end"}
           justify="space-between"
         >
-          {ContactInfo.map((info, index) => {
+          {Data.ContactSection.ContactInformationList.map((info, index) => {
             return (
               <Card
                 className="expand-card"

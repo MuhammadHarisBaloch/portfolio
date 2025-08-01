@@ -11,7 +11,7 @@ import {
   MantineProvider,
   mantineHtmlProps,
 } from "@mantine/core";
-import theme from "../../styles/theme";
+import theme from "../styles/theme";
 import { Notifications } from "@mantine/notifications";
 
 export const metadata = {
