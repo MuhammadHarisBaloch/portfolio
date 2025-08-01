@@ -29,7 +29,7 @@ export default function ProjectCard({
           <Title order={4} fw={600} c="white">
             {title}
           </Title>
-          <Link href={link}>
+          <Link href={link} target="_blank">
             <IconBrandGithub className="cyan-color-tilt" size={24} />
           </Link>
         </Flex>

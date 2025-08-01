@@ -53,28 +53,28 @@ const ProjectDetails: ProjectDetails[] = [
     subTitle:
       "A responsive Netflix clone built with modern web technologies, featuring movie browsing, search functionality, and dynamic content loading.",
     languages: ["React", "CSS", "JavaScript"],
-    link: "",
+    link: "https://github.com/MuhammadHarisBaloch/Netflix-Clone",
   },
   {
     title: "Scoot App",
     subTitle:
       "A modern scooter rental application with user authentication, booking system, and location tracking features.",
     languages: ["Next.js", "TypeScript", "TailwindCSS"],
-    link: "",
+    link: "https://github.com/MuhammadHarisBaloch/Scoot-App",
   },
   {
     title: "Dwello Web",
     subTitle:
       "A real estate platform with property listings, search filters, and user dashboard for property management.",
     languages: ["React", " Node.js", "MongoDB"],
-    link: "",
+    link: "https://github.com/MuhammadHarisBaloch/Dwello-Web",
   },
   {
     title: "Bella Olonje",
     subTitle:
       "A beautiful food delivery application with modern UI design, menu browsing, and order management system.",
     languages: ["HTML", "CSS", "JavaScript"],
-    link: "",
+    link: "https://github.com/MuhammadHarisBaloch/Bella-Olonje",
   },
 ];
 
