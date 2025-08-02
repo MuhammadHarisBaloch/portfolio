@@ -2,6 +2,7 @@ import { Stack, Text, Button, Group } from "@mantine/core";
 import { IconDownload } from "@tabler/icons-react";
 import Link from "next/link";
 import { isMobile } from "react-device-detect";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function HeroSection({
   scrollToContact,
@@ -20,6 +21,8 @@ export default function HeroSection({
     >
       <Text
         fw={600}
+        variant="gradient"
+        gradient={{ from: "cyan", to: "blue", deg: 45 }}
         lh={{ sm: 0.8, base: 1 }}
         ta={{ sm: "start", base: "center" }}
         c="cyan.9"
@@ -28,12 +31,20 @@ export default function HeroSection({
         Muhammad Haris
       </Text>
       <Text c="#74E8F9" fz={{ sm: "xxl", base: "xl" }} fw={500}>
-        Web Developer
+        <Typewriter
+          words={["Software Engineer", "Web Developer", "UI/UX Enthusiast"]}
+          loop={true}
+          cursor
+          typeSpeed={80}
+          deleteSpeed={60}
+          delaySpeed={1500}
+        />
       </Text>
       <Text ta="center" c="gray" w={{ sm: "60%", base: "90%" }} fz="lg">
-        I'm a Software Engineering student at Mehran University passionate about
-        building responsive and user-friendly web applications using modern
-        technologies like HTML, CSS, JavaScript, React, TypeScript, and Next.js.
+        I’m a final-year Software Engineering student at Mehran University,
+        specializing in front-end web development. I build fast, responsive, and
+        user-friendly applications using React, TypeScript, and Next.js — with a
+        strong foundation in HTML, CSS, and JavaScript.
       </Text>
       <Group w="100%" justify="center" gap={isMobile ? "md" : "xl"}>
         <Button
