@@ -49,7 +49,6 @@ export default function BasicUI({ children }: PropsWithChildren) {
           </Group>
         </Group>
       </AppShell.Header>
-      {/* Manual Mobile Navbar */}
       <div className={`mobile-navbar ${opened ? "open" : ""}`}>
         <Stack>
           {Data.HeaderSection.HeaderItems.map((data, index) => (
