@@ -15,6 +15,7 @@ import { isMobile } from "react-device-detect";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { Data } from "@/constants/Data";
+import { useDisclosure } from "@mantine/hooks";
 
 export default function ContactSection() {
   const sendEmail = async () => {
@@ -26,8 +27,10 @@ export default function ContactSection() {
         "dp0EyRD3_tjsj-F_a"
       );
       console.log("Email sent:", result.text);
+      close();
     } catch (error) {
       console.error("Email send error:", error);
+      close();
     }
   };
 
@@ -43,6 +46,7 @@ export default function ContactSection() {
     },
   });
   const formRef = useRef<HTMLFormElement>(null);
+  const [loading, { open, close }] = useDisclosure(false);
 
   return (
     <Grid w="100%" pt="3xl" gutter="3xl" align="center">
@@ -101,6 +105,7 @@ export default function ContactSection() {
                   "Thank you for your message. I'll get back to you soon.",
                 color: "green",
               });
+              open();
               form.reset();
             }}
           >
@@ -161,6 +166,7 @@ export default function ContactSection() {
                 fz="xs"
                 c="black"
                 type="submit"
+                loading={loading}
               >
                 Send Message
               </Button>

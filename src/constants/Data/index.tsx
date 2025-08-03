@@ -89,7 +89,7 @@ const SocialLink = [
   },
   {
     icon: <IconBrandLinkedin className="cyan-color-tilt" size={25} />,
-    link: "www.linkedin.com/in/mharisbaig",
+    link: "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile",
   },
 ];
 const HeaderList = ["Home", "About", "Projects", "Contact"];

@@ -8,15 +8,7 @@ export default function BasicUI({ children }: PropsWithChildren) {
   const [opened, { toggle }] = useDisclosure();
   console.log("Navbar opened:", opened);
   return (
-    <AppShell
-      layout="default"
-      header={{ height: 80 }}
-      navbar={{
-        width: 300,
-        breakpoint: "sm",
-        collapsed: { mobile: !opened, desktop: true },
-      }}
-    >
+    <AppShell header={{ height: 80 }}>
       <AppShell.Header w="100%">
         <Group h="100%" w="100%" justify="space-between">
           <Group
