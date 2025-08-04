@@ -15,7 +15,7 @@ import theme from "../styles/theme";
 import { Notifications } from "@mantine/notifications";
 
 export const metadata = {
-  title: "My Mantine app",
+  title: "My Portfolio",
   description: "I have followed setup instructions carefully",
 };
 
